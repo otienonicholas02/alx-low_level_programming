@@ -1,5 +1,5 @@
 /*
- * File: 10-print_comb2.c
+ * File: 100-print_comb2.c
  * Auth: Brennan D Baraban
  */
 
