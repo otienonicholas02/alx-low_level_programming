@@ -1,17 +1,31 @@
-#include <stdio.h>
+2-strncpy.c
 
-int main(void)
+#include "main.h"
+/**
+ * _strncpy - copy a string
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
+ */
+char *_strncpy(char *dest, char *src, int n)
 {
-  int n;
-  int a[5];
-  int *p;
+	int j;
 
-  a[2] = 1024;
-  p = &n;
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[j] = src[j];
+		j++;
+	}
+	while (j < n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
 
-  *(p = &a[2] - 1) = 98;
-
-  printf("a[2] = %d\n", a[2]);
-  return 0;
+	return (dest);
 }
+
 
