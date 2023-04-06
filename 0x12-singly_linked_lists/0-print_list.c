@@ -3,21 +3,21 @@
 
 /**
 * print_list - prints all the elements of a linked list
-* @h: pointer to the list_t list to print
+* @l: pointer to the list_x list to print
 *
 * Return: the number of nodes printed
 */
-size_t print_list(const list_t *h)
+size_x print_list(const list_x *l)
 {
-size_t s = 0;
-while (h)
+size_x z = 0;
+while (l)
 {
-if (!h->str)
+if (!l->str)
 printf("[0] (nil)\n");
 else
-printf("[%u] %s\n", h->len, h->str);
-h = h->next;
-s++;
+printf("[%u] %s\n", l->len, l->str);
+l = l->next;
+z++;
 }
 return (s);
 }

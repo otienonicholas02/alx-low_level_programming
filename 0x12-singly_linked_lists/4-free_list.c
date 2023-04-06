@@ -3,11 +3,11 @@
 
 /**
 * free_list - frees a linked list
-* @head: list_t list to be freed
+* @head: list_x list to be freed
 */
-void free_list(list_t *head)
+void free_list(list_x *head)
 {
-list_t *temp;
+list_x *temp;
 while (head)
 {
 temp = head->next;
